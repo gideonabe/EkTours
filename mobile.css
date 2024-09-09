@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px) {
+  .topnav{
+    max-width: 100%;
+  }
+
+  .topnav-background {
+
+  }
+
+  .header{
+    overflow: hidden;
+    /* background-color: #333; */
+    position: relative;
+  }
+
+  .header #main-nav-list{
+    display: none;
+  }
+
+  .header a {
+    color: yellow;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .header a.icon{
+    /* background: black; */
+    color: goldenrod;
+    display: block;
+    position: absolute;
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-right: 10px;
+    right: 0;
+    top: 0;
+  }
+  
+  .header a.icon:hover{
+    font-size: 3.3rem;
+    transition: ease 0.2s;
+  }
+}

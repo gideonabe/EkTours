@@ -1,0 +1,574 @@
+/* custom google font link */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,1000;1,300;1,400;1,500;1,600;1,800;1,900;1,1000&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+/* custom Scroll Bar CSS */
+::-webkit-scrollbar{
+    width: 10px;
+    margin-bottom: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(233, 232, 232);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #f5ebb7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: goldenrod;;
+}
+
+/* background image for the navsection and logo section */
+.topnav{
+    padding-top: 2rem;
+    background-image: url('img/waterfall.webp');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    /* color: hsl(0, 0%, 0%); */
+    
+}
+
+.topnav-background{
+    background-color: hsl(0, 0%, 0%, 0.2);
+    border-radius: 15px;
+    /* background-position: right 45px bottom; */
+    /* margin: 10px 80px 40px 40px; */
+    margin: 2.3rem;
+    align-self: center;
+    /* display: flex; */
+    /* justify-self: center; */
+    /* position: fixed; */
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 7.6rem;
+    padding: 1rem 2.6rem;
+    
+}
+
+.header a img{
+    /* margin: -13rem 2rem; */
+    max-width: 50%;
+    /* height: 20rem; */
+    /* background-color: #f5ebb7; */
+    padding: 10px 10px;
+    /* display: none; */
+}
+
+.header a img:hover{
+    max-width: 52%;
+    transition: 0.2s ease-out;
+    /* display: none; */
+    
+}
+
+/* .logo{
+    font-size: 2rem;
+    height: 15.2rem;
+    padding-top: rem;
+    padding-left: -1rem;
+    margin-left: -2px;
+} */
+
+#main-nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.3rem;
+    padding-top: 0.5rem;
+    color: white;
+}
+
+/* Hamburger icon */
+.header a.icon{
+    display: none;
+}
+
+.logo:link, .logo:visited{
+    size: 3rem;
+}
+
+.logo:hover, .logo:active{
+    size: 6rem;
+    color: goldenrod;
+}
+
+#main-nav-list :link, 
+#main-nav-list :visited{
+    display: inline-block;
+    color: white;
+    font-size: 1.4rem;
+}
+
+#main-nav-list :hover, 
+#main-nav-list :active{
+    color: gold;
+    font-weight: 1000;
+    font-size: 1.45rem;
+    transition: .2s ease;
+}
+
+.main-nav-list.cta:link, 
+.main-nav-list.cta:visited{
+    padding: 1.1rem 1.8rem;
+    border-radius: 15px;
+    color: white;
+}
+
+.main-nav-list.cta:hover, 
+.main-nav-list.cta :active{
+    background: goldenrod;
+    color: white;
+}
+
+.main-nav-list.cta{
+    border: ridge 3px goldenrod;
+    color: white;
+}
+
+.section-hero{
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero{
+    max-width: 130rem;
+    margin: auto 0;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.hero-description{
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-bottom: 4.8rem;
+}
+
+.heading1{
+    color: gold;
+    padding-top: 27px;
+    padding-right: 12px;
+}
+
+.heading2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* ABOUT SECTION */
+.textandimage-container{
+   margin-top: 2rem;
+   /* margin-left: 15rem; */
+}
+
+.textandimage-container h1 {
+    color: hsla(43, 74%, 50%, 0.993);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.textandimage-container h1:hover{
+    color: hsla(43, 74%, 49%, 0.993);
+    font-weight: bolder;
+    font-size: 2.7rem;
+    transition: 0.3s ease-out;
+}
+
+.about-grid {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px; /* Add space between elements */
+}
+
+.element1{
+    width: 50%;
+    margin-left: .3rem;
+    padding-left: 10rem;
+    background: linear-gradient(45deg, #edc307 0%, #059EA0 100%);
+    /* background-color: yellow; */
+}
+
+.element2{
+    font-size: 1.3rem;
+    width: 50%;
+    padding: 5rem;
+    font-family: 'Gantari', sans-serif;
+    color: white;
+    background-color: goldenrod;
+}
+
+.element2 h1{
+    color: #059EA0;
+    font-size: 2.1rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.element2 h1:hover{
+    font-size: 2.15rem;
+    color: #059EA0;
+}
+
+.element2 p{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* EXPLORE SECTION */
+.explore-container{
+    position: relative;
+    background-image: url('img/sky\ background.jpg');
+    background-size: cover;
+}
+
+.text-explore{
+    /* color: black; */
+    text-align: center;
+    color: hsla(43, 77%, 60%, 1);
+    /* padding: 60px; */
+    /* background-color: white; */
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: none;
+}
+
+.text-explore h1{
+    color: hsla(43, 74%, 50%, 0.993);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.text-explore h1:hover{
+    color: hsla(43, 74%, 49%, 0.993);
+    font-weight: bolder;
+    font-size: 2.7rem;
+    transition: 0.3s ease-out;
+}
+
+.image-container{
+    display: flex;
+    gap: 40px;
+    /* justify-content: center; */
+    padding: 10px 10px 10px 50px;
+}
+
+.image-container .image-with-text img {
+    object-fit: cover;
+}
+
+.image-with-text {
+    width: 350rem;
+    text-align: center; /* Center-align the text */
+}
+
+.image-with-text .image-text {
+    width: 100%;
+}
+
+.image-with-text img {
+    width: 100%; /* Ensure images don't exceed their container width */
+}
+
+.image-with-text h6{
+    font-size: larger;
+    padding: 20px;
+    font-family: 'Gantari', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.image-with-text p{
+    max-width: fit-content;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.image-text{
+    position: relative;
+    background-color: white;
+    margin-top: -15px;
+    padding: 10px 10px;
+}
+
+.image-text:hover{
+    background-color: hsl(208, 43%, 85%);
+}
+
+.box-divider{
+    position: bottom;
+}
+
+
+/* GALLERY */
+.gallery-text{
+    color: black;
+    text-align: center;
+    padding-top: 1.5rem ;
+    padding-bottom: 1rem;
+}
+
+.gallery-text h2{
+    color: hsla(43, 74%, 50%, 0.993);
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 37rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.gallery-text h2:hover{
+    color: hsla(43, 74%, 49%, 0.993);
+    font-weight: bolder;
+    font-size: 2.7rem;
+    transition: 0.3s ease-out;
+}
+
+.gallery-text p{
+    margin: 0 9rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-family: 'Gayathri', sans-serif;
+}
+
+.slideshow-container{
+    /* max-width: 100%; */
+    position: relative;
+    margin-top: 5px;
+    /* display: block; */
+}
+
+.mySlides{
+    display: none;
+    max-width: 100%;
+    justify-content: center;
+    /* background-color: hsl(240, 100%, 70%); */
+    /* margin-right: 20px; */
+}
+
+.mySlides img {
+    width: 23%;
+    height: 20rem;
+    /* padding: 20px; */
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+/* BOOKING */
+.booking{
+    background-color: black;
+    /* font-family: monospace; */
+}
+
+.booking a{
+    text-decoration: none;
+    color: goldenrod;
+    text-align: center;
+}
+
+.booking h2{
+    font-size: 2.3rem;
+    padding: .7rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+
+.booking-text p{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    color: goldenrod;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booking-form{
+    margin: 5px 100px;
+}
+
+.booking-form-label .form-group{
+    margin: 0.75rem;
+    color: goldenrod;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: monospace; */
+    font-size: 1.4rem;
+}
+
+
+.booking .booking-form input,
+.booking .booking-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.booking-form-label .form-group select{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+.booking-submit-btn{
+    border-radius: 10px;
+    padding: .7rem 2rem;
+    font-size: 1.5rem;
+    background: goldenrod;
+    color: white;
+    margin: .7rem 37rem;
+    /* justify-content: center; */
+}
+
+.booking-submit-btn:link, .booking-submit-btn:visited{
+    display: inline-block;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.booking-submit-btn:hover, .booking-submit-btn:active{
+    background: rgb(212, 138, 1);
+    font-weight: 600;
+
+}
+
+.contact h2{
+    padding: 10px 10px 0 30px;
+    font-family: 'Gayathri', sans-serif;;
+    font-size: 1.9rem;
+    color: hsla(43, 74%, 60%, 0.993);
+}
+
+.contact h2:hover{
+    color: hsla(43, 74%, 50%, 0.993);
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.contact-text p{
+    padding: 10px 10px 0 30px;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 20px;
+}
+
+.media-logo{
+    padding: 10px 10px 10px 30px;
+    
+}
+.media-logo a{
+    color: rgb(212, 138, 1);
+    font-size: 30px;
+}
+
+.footer div{
+    margin: 0 auto;
+    padding: 40px ;
+}
+.footer{
+    background: rgb(236, 235, 235);
+    display: flex;
+    gap: 40px; 
+    cursor: pointer;
+}
+
+.footer h2{
+    font-size: 23px;
+    font-family: 'Ganasari', sans-serif;;
+}
+
+.footer p{
+    font-family: 'Gayathri', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.media-logo2{
+    margin: 0 auto;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.contact-footer p i{
+    color: rgb(212, 138, 1); 
+    cursor: pointer;  
+}
+
+/* CSS in a separate file or within <style> tag in <head> */
+#scrollToTopButton {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#scrollToTopButton:hover {
+    background-color: rgb(212, 138, 1);
+}
